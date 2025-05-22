@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script><script src="classic.js"></script>
+    <title>タイムショック</title>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
+</head>
+<body>
+    <form id="form1" > <!--ゲーム設定など-->
+        <div id="no1" ><h1>タイムショックゲーム！</h1></div> <!--最初はゲームのタイトルを表示-->
+        <div id="no2">↓に難易度(1~3の整数)を入力してスタート</div> 
+        <!--    <input type="number" id="no3"> <br><!--最初は難易度選択用のnumberとして使用-->
+        <br>
+        <select id ="no3" style="font-weight: bold; color: purple;" >
+            <option value="1">レベル１</option>
+            <option value="2">レベル２</option>
+            <option value="3">レベル３</option>
+        </select>
+         　<button id="start1button">ゲームスタート</button> <!--最初はスタートボタンとして使用-->
+         <div id="count"></div>
+         <div id="score1">残り時間:<span id="timecount">OO</span>秒　ゲームスコア: <span id="score2">0</span></div><!--scoreを表示-->
+        <div id="no4"></div><br><br>
+        <div id="game1" style="background-color: white"></div>  <!--ゲーム画面(ここでも指示文などを表示とかいろいろ-->
+        <div id="game2"></div> <!--ゲーム画面の中の仕様表現エリア(汎用性抜群)-->
+    </form> <!--/ゲーム設定など-->
+
+<script src="createButtons.js"></script>
+<script src="renda.js"></script>
+<script src="kudamono.js"></script>
+<script src="calc.js"></script>
+<script src="function.js"></script>
+<script src="timeshock1.js"></script> <!--timeshock0.jsは全てのjsファイルのバックアップ用(これを読み込むだけですべて実行可能), timeshock1.jsは関数を全部違うJSにまとめたやつ-->
+</body>
+</html>
