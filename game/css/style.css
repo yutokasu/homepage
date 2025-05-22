@@ -1,0 +1,95 @@
+#form1{ 
+    text-align : center;
+}
+#game2 {
+  height: 400px;
+  margin-bottom: 0px;
+  border: 1px solid rgb(243, 219, 219);
+  /*display: flex;*/
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #fce8e8;
+}
+
+html{
+    overflow: hidden;
+}
+
+/*ここから追加分*/
+body{
+    background-color: #695acc;
+}
+
+#no1{
+    font-size: 15px;/* フォントサイズ */
+    font-weight: bold;/* フォント太さ */
+    //padding-top: 5px;
+    //padding-bottom: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    border-bottom: solid 3px #efe245;/* 線 */
+    color: #ef8b44;/*フォント色*/
+}
+
+#no1:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 15%;
+    bottom: -3px;
+    border-bottom: solid 3px #ef8b45;
+}
+
+#no2{
+    display: inline-block;
+    font-size: 10px;/* フォントサイズ */
+    font-weight: bold;/* フォント太さ */
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 4px double tomato;/* 線 */
+    border-radius: 10px;/* 角丸 */
+    text-align: center;/* テキストの位置 */
+    color: #dcdcdc;/* フォント色 */
+}
+
+#no3{
+    font-weight: bold; 
+    font-size: 15px;
+    color: purple;
+}
+
+#start1button{
+    border-color: red;
+    background-color: lightcyan;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#score1{
+    position: absolute;
+    right: 30px;
+}
+
+#timecount{
+    color: #9acd32;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#score2{
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#no4{
+    color: white;
+}
+
+#score1{
+    color: #dcdcdc;
+}
+
